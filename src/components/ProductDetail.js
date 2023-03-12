@@ -152,8 +152,20 @@ const ProductDetail = ({
         <div className="col" style={{ marginTop: 20 }}>
           <h2 id="name"> {product.name}</h2>
           <p id="price"> Rs.{product.price} </p>
-          <p id="rating"> Rating: {product.rating} </p>
+          {/* <p id="rating"> Rating: {product.rating} </p> */}
           {/* Rating: ${product.rating} :  */}
+          <div id ="rating" >
+          {editMode?  `Rating: ${product.rating}`  : 
+          (<>
+          < AiTwotoneStar style= { product.rating < 1 ? stylegrey : styleblue} />
+          < AiTwotoneStar style= { product.rating < 2 ? stylegrey : styleblue} />
+          < AiTwotoneStar style= { product.rating < 3 ? stylegrey : styleblue} />
+          < AiTwotoneStar style= { product.rating < 4 ? stylegrey : styleblue} />
+          < AiTwotoneStar style= { product.rating < 5 ? stylegrey : styleblue} />
+          </>)
+          }
+          </div>
+          
           
         </div>
         <div className="col" style={{ marginTop: 20 }}>
@@ -192,8 +204,7 @@ const ProductDetail = ({
                     saveEditedData();
                   }}
                 >
-                  {" "}
-                  Save{" "}
+                  Save
                 </button>
               ) : (
                 <AiTwotoneDelete

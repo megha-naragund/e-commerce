@@ -52,7 +52,8 @@ const styles = {
     position: 'fixed',
     width: '100%',
     top: '0',
-    zIndex: '1100'
+    zIndex: '1100',
+    color:'white'
   },
   cartIcon: {
     height: 32,
@@ -67,7 +68,8 @@ const styles = {
     padding:  '4px 8px',
     position: 'absolute',
     right: 0,
-    top: -9
+    top: -9,
+    color:'black'
   }
 };
 
