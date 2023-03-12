@@ -24,7 +24,7 @@ const CartItem =({productID,productImage, productName, productDescription, produ
     const cart = useSelector((state) => state.counter.cart);
     // const dispatch = useDispatch();
     return(
-        <div className="container" style={{width:'60%',height:'16rem', border:"solid", borderRadius:'1rem', marginTop:'1rem'}}>
+        <div className="container" style={{ border:"solid", borderRadius:'1rem', marginTop:'1rem'}}>
             <div className="row">
                 {/* <div className="col-sm-3" > */}
                     <img
