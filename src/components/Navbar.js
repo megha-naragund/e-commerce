@@ -34,8 +34,8 @@ const Navbar = ({addProduct, pageDisplay}) => {
         <img  style={{ height: 110, width: 112, objectFit: 'cover', borderRadius: 5, background: '#ccc' }}
         src="https://as2.ftcdn.net/v2/jpg/00/97/00/05/1000_F_97000552_d8RwiZAnFewznisQphPtjyxxRNAAZQ92.jpg" style={styles.cartIcon} />
         <span style={styles.cartCount}>{totalNoItemsCart}</span>
-      </div> 
-    </div> */} 
+      </div> */} 
+    </div> 
   );
 }
 
