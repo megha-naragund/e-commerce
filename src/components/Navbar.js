@@ -24,18 +24,18 @@ const Navbar = ({addProduct, pageDisplay}) => {
         <h4 onClick={()=> pageDisplay('product')} className="active">Products</h4>
       </div>
       <div  style={{cursor:'pointer'}}>
-        <h4 onClick={()=> pageDisplay('cart')}>Cart</h4>
+        <h4 onClick={()=> pageDisplay('cart')}>Cart <span style={styles.cartCount}>{totalNoItemsCart}</span></h4>
       </div> 
       <div >
         <AddProduct addProduct={addProduct} />
       </div>
-      <div style={styles.cartIconContainer}>
+  {/* <div style={styles.cartIconContainer}>
         
         <img  style={{ height: 110, width: 112, objectFit: 'cover', borderRadius: 5, background: '#ccc' }}
         src="https://as2.ftcdn.net/v2/jpg/00/97/00/05/1000_F_97000552_d8RwiZAnFewznisQphPtjyxxRNAAZQ92.jpg" style={styles.cartIcon} />
         <span style={styles.cartCount}>{totalNoItemsCart}</span>
       </div> 
-    </div>
+    </div> */} 
   );
 }
 
@@ -64,11 +64,11 @@ const styles = {
   },
   cartCount:  {
     background: 'yellow',
-    borderRadius: '50%',
-    padding:  '4px 8px',
-    position: 'absolute',
+    borderRadius: '40%',
+    padding:  '1px 3px 1px 3px',
+    position: 'relative',
     right: 0,
-    top: -9,
+    top: -5,
     color:'black'
   }
 };
