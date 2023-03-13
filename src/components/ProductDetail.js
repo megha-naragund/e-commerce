@@ -141,7 +141,7 @@ const ProductDetail = ({
               left: "50%",
               right: "50%",
               translate: ("-15%", "-15%"),
-              objectFit: "cover",
+              objectFit: "fill",
               borderRadius: 5,
               background: "#ccc",
               marginTop: "0.5rem",
